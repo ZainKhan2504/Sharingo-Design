@@ -1,139 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/ea636074e5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
     <title>Sharingo</title>
 </head>
-<body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light nav-color">
-      <a class="navbar-brand" href="landing.html">
-        <img src="images/logo.png" alt="logo">
-      </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="signin.html">
-                Sign In
-              </a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="signup.html">
-                Sign Up
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-  </header>
-  <div class="container">  
-    <div class="profile">
-        <div class="profile-inner">
-            <h1>Create Profile</h1>
-            <form class="form">   
-                <div class="profile-general">
-                    <h4>General Information</h4>  
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light nav-color">
+            <a class="navbar-brand" href="landing.html">
+                <img src="images/logo.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="signin.html">
+                            Sign In
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="signup.html">
+                            Sign Up
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="cProfile">
+            <div class="cProfile-inner">
+                <h1>Create Profile</h1>
+                <form class="form">
+                    <div class="cProfile-general">
+                        <h4>General Information</h4>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <input type="text" placeholder="Date of Birth" name="DOB" class="form-control" />
+                            </div>
+                            <div class="form-group col-md-6">
+                                <select name="status" class="form-control">
+                                    <option value="">Gender</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Other">Other</option>
+                                    <option value="Unknown">Prefer not to say</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="text" placeholder="City" name="city" class="form-control" />
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="text" placeholder="Country" name="country" class="form-control" />
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="text" placeholder="Phone" name="phone" class="form-control" />
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="text" placeholder="Hobbies" name="hobbies" class="form-control" />
+                            </div>
+                            <div class="form-group col-md-6">
+                                <textarea placeholder="A short bio of yourself" name="bio"
+                                    class="form-control"></textarea>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="text" placeholder="Image" name="image" class="form-control" />
+                            </div>
+                        </div>
+                    </div>
                     <div class="row">
-                        <div class="form-group col-md-6">
-                            <input type="text" placeholder="Date of Birth" name="DOB" class="form-control"/>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <select name="status" class="form-control">
-                            <option value="">Gender</option>
-                            <option value="Male">Male</option>
-                            <option value="Female">Female</option>
-                            <option value="Other">Other</option>
-                            <option value="Unknown">Prefer not to say</option>
-                            </select>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <input type="text" placeholder="City" name="city" class="form-control"/>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <input type="text" placeholder="Country" name="country" class="form-control"/>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <input type="text" placeholder="Phone" name="phone" class="form-control"/>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <input type="text" placeholder="Hobbies" name="hobbies" class="form-control"/>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <textarea placeholder="A short bio of yourself" name="bio" class="form-control"></textarea>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <input type="text" placeholder="Image" name="image" class="form-control"/>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="profile-education">
-                            <h4>Educational Information</h4>
-                            <div class="row">
-                                <div class="form-group col-md-6">
-                                    <input type="text" placeholder="Level" name="level" class="form-control"/>
+                        <div class="col-md-6">
+                            <div class="cProfile-education">
+                                <h4>Educational Information</h4>
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <input type="text" placeholder="Level" name="level" class="form-control" />
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="text" placeholder="Institute" name="institute"
+                                            class="form-control" />
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="text" placeholder="Graduation" name="graduation"
+                                            class="form-control" />
+                                    </div>
                                 </div>
-                                <div class="form-group col-md-6">
-                                    <input type="text" placeholder="Institute" name="institute" class="form-control"/>
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <input type="text" placeholder="Graduation" name="graduation" class="form-control"/>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="cProfile-social">
+                                <h4>Social Information</h4>
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <input type="text" placeholder="Facebook URL" name="facebook"
+                                            class="form-control" />
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <input type="text" placeholder="Twitter URL" name="twitter"
+                                            class="form-control" />
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <input type="text" placeholder="Instagram URL" name="instagram"
+                                            class="form-control" />
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <input type="text" placeholder="LinkedIn URL" name="linkedIn"
+                                            class="form-control" />
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <input type="text" placeholder="Pinterest URL" name="pinterest"
+                                            class="form-control" />
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="profile-social">
-                            <h4>Social Information</h4>
-                            <div class="row">
-                                <div class="form-group col-md-6">
-                                    <input type="text" placeholder="Facebook URL" name="facebook" class="form-control"/>
-                                </div>
-                        
-                                <div class="form-group col-md-6">
-                                    <input type="text" placeholder="Twitter URL" name="twitter" class="form-control"/>
-                                </div>
-                        
-                                <div class="form-group col-md-6">
-                                    <input type="text" placeholder="Instagram URL" name="instagram" class="form-control"/>
-                                </div>
-                        
-                                <div class="form-group col-md-6">
-                                    <input type="text" placeholder="LinkedIn URL" name="linkedIn" class="form-control"/>
-                                </div>
-                        
-                                <div class="form-group col-md-6">
-                                    <input type="text" placeholder="Pinterest URL" name="pinterest" class="form-control"/>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
     </div>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>
