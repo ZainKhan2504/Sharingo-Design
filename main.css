@@ -1,0 +1,294 @@
+:root{
+    --primary-color: #f38181;
+    --primary-color-dark: #f56464;
+    --background-color: #fefaec;
+    --light-grey: #ccc;
+    --black: #000;
+  }
+  
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand";
+}
+
+/* NavBar */
+
+.nav-color{
+  background-color: var(--primary-color);
+}
+
+.navbar-brand{
+  padding: 0;
+}
+
+.navbar{
+  padding: 0px 5px;
+}
+
+.navbar-brand img{
+  width: 80px;
+  height: 80px;
+  padding: 3px;
+  margin-left: 10px;
+}
+
+.nav-item{
+  border: 2px solid var(--background-color);
+  border-radius: 30px;
+  padding: 3px;
+}
+
+.nav-item:not(:last-child){
+  margin-right: 5px;
+  background-color: var(--background-color);
+}
+
+.nav-item:hover:not(:last-child){
+  background-color: var(--primary-color);
+}
+
+.nav-item:active:not(:last-child){
+  background-color: var(--primary-color-dark);
+}
+
+.nav-item:last-child:hover{
+  background-color: var(--background-color);
+}
+
+.nav-item:last-child:active{
+  background-color: rgb(241, 222, 222);
+}
+
+/* Landing */
+
+.landing{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  background-color: var(--background-color);
+  height: 80vh;
+}
+
+.landing-inner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Sign Up */
+
+.signup{
+  height: 100%;
+  margin-top: 30px;
+}
+
+.signup-inner{
+  height: 100%;
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--light-grey);
+  border-radius: 30px;
+  box-shadow: 5px 5px 5px var(--light-grey);
+  padding: 20px 20px 0px 20px;
+  background-color: var(--background-color);
+}
+
+.signup-inner h1{
+  width: 100%;
+  text-align: center;
+}
+
+.signup-inner p{
+  width: 100%;
+}
+
+.form{
+  width: 100%;
+}
+
+.form-group{
+  width: 100%;
+}
+
+.form-input{
+  width: 100%;
+}
+
+.form-control{
+  border-radius: 30px;
+}
+
+.lead{
+  text-align: center;
+}
+
+.btn{
+  width: 100%;
+}
+
+.btn-color{
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  border-radius: 20px;
+}
+
+.btn-color:hover{
+  color: var(--black);
+  box-shadow: 2px 2px 2px var(--light-grey);
+}
+
+.btn-color:active{
+  background-color: var(--primary-color-dark);
+}
+
+.navigate{
+  text-align: left;
+  padding-top: 10px;
+}
+
+.navigate a{
+  color: var(--primary-color);
+}
+
+.navigate a:hover{
+  text-decoration:none;
+  color: var(--black);
+}
+
+/* Sign In */
+
+.signin{
+  height: 100%;
+  margin-top: 30px;
+}
+
+.signin-inner{
+  height: 100%;
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--light-grey);
+  border-radius: 30px;
+  box-shadow: 5px 5px 5px var(--light-grey);
+  padding: 20px 20px 0px 20px;
+  background-color: var(--background-color);
+}
+
+.signin-inner h1{
+  width: 100%;
+  text-align: center;
+}
+
+.signin-inner p{
+  width: 100%;
+}
+
+/* Change Password */
+
+.changePassword{
+  height: 100%;
+  margin-top: 30px;
+}
+
+.changePassword-inner{
+  height: 100%;
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--light-grey);
+  border-radius: 30px;
+  box-shadow: 5px 5px 5px var(--light-grey);
+  padding: 20px;
+  background-color: var(--background-color);
+}
+
+.changePassword-inner h1{
+  width: 100%;
+  text-align: center;
+}
+
+.changePassword-inner p{
+  width: 100%;
+}
+
+/* Create Profile */
+
+.profile{
+  margin-top: 30px;
+}
+
+.profile-inner h1{
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.profile-general{
+  border: 1px solid var(--light-grey);
+  border-radius: 30px;
+  box-shadow: 5px 5px 5px var(--light-grey);
+  padding: 20px 20px 0px 20px;
+  background-color: var(--background-color);
+  margin-bottom: 30px;
+}
+
+.profile-general h4{
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.profile-education{
+  border: 1px solid var(--light-grey);
+  border-radius: 30px;
+  box-shadow: 5px 5px 5px var(--light-grey);
+  padding: 20px 20px 0px 20px;
+  background-color: var(--background-color);
+  margin-bottom: 30px;
+}
+
+.profile-education h4{
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.profile-social{
+  border: 1px solid var(--light-grey);
+  border-radius: 30px;
+  box-shadow: 5px 5px 5px var(--light-grey);
+  padding: 20px 20px 0px 20px;
+  background-color: var(--background-color);
+  margin-bottom: 30px;
+}
+
+.profile-social h4{
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+  .signup-inner{
+    width: 80%;
+  }
+  .signin-inner{
+    width: 80%;
+  }
+  .changePassword-inner{
+    width: 80%;
+  }
+}
