@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/ea636074e5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -44,94 +45,113 @@
     <div class="container">
         <div class="cProfile">
             <h1>Create Profile</h1>
+            <p class="lead"><i class="fas fa-user-edit"></i> Tell us about yourself</p>
             <div class="cProfile-inner">
                 <form class="form">
-                    <div class="cProfile-general">
-                        <h4>General Information</h4>
-                        <div class="row">
-                            <div class="form-group col-md-3">
-                                <input type="text" placeholder="Date of Birth" name="DOB" class="form-control" />
-                            </div>
-                            <div class="form-group col-md-3">
-                                <select name="status" class="form-control">
-                                    <option value="">Gender</option>
-                                    <option value="Male">Male</option>
-                                    <option value="Female">Female</option>
-                                    <option value="Other">Other</option>
-                                    <option value="Unknown">Prefer not to say</option>
-                                </select>
-                            </div>
-                            <div class="form-group col-md-3">
-                                <input type="text" placeholder="City" name="city" class="form-control" />
-                            </div>
-                            <div class="form-group col-md-3">
-                                <input type="text" placeholder="Country" name="country" class="form-control" />
-                            </div>
-                            <div class="form-group col-md-3">
-                                <input type="text" placeholder="Phone" name="phone" class="form-control" />
-                            </div>
-                            <div class="form-group col-md-3">
-                                <input type="text" placeholder="Hobbies" name="hobbies" class="form-control" />
-                            </div>
-                            <div class="form-group col-md-3">
-                                <input type="text" placeholder="Image" name="image" class="form-control" />
-                            </div>
-                            <div class="form-group col-md-3">
-                                <textarea placeholder="A short bio of yourself" name="bio"
-                                    class="form-control"></textarea>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="cProfile-general">
+                                <h4>General Information</h4>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group form-group-textBox">
+                                            <textarea placeholder="&#xF303; A short bio of yourself" name="bio"
+                                                class="form-control"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" placeholder="&#xF1FD; Date of Birth" name="DOB"
+                                                class="form-control" />
+                                        </div>
+                                        <div class="form-group">
+                                            <select name="status" class="form-control">
+                                                <option value="" hidden>&#xF228; Gender</option>
+                                                <option value="Male">Male</option>
+                                                <option value="Female">Female</option>
+                                                <option value="Other">Other</option>
+                                                <option value="Unknown">Prefer not to say</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" placeholder="&#xF64F; City" name="city"
+                                                class="form-control" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" placeholder="&#xF7A2; Country" name="country"
+                                                class="form-control" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" placeholder="&#xF87B; Phone" name="phone"
+                                                class="form-control" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" placeholder="&#xF02D; Hobbies" name="hobbies"
+                                                class="form-control" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="file" id="myFile" name="filename" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
                         <div class="col-md-6">
                             <div class="cProfile-social">
                                 <h4>Social Information</h4>
                                 <div class="row">
                                     <div class="form-group col-md-6">
-                                        <input type="text" placeholder="Facebook URL" name="facebook"
+                                        <input type="text" placeholder="&#xF09a; Facebook URL" name="facebook"
                                             class="form-control" />
                                     </div>
 
                                     <div class="form-group col-md-6">
-                                        <input type="text" placeholder="Twitter URL" name="twitter"
+                                        <input type="text" placeholder="&#xF099; Twitter URL" name="twitter"
                                             class="form-control" />
                                     </div>
 
                                     <div class="form-group col-md-6">
-                                        <input type="text" placeholder="Instagram URL" name="instagram"
+                                        <input type="text" placeholder="&#xE055; Instagram URL" name="instagram"
                                             class="form-control" />
                                     </div>
 
                                     <div class="form-group col-md-6">
-                                        <input type="text" placeholder="LinkedIn URL" name="linkedIn"
+                                        <input type="text" placeholder="&#xF08c; LinkedIn URL" name="linkedIn"
                                             class="form-control" />
                                     </div>
 
                                     <div class="form-group col-md-6">
-                                        <input type="text" placeholder="Pinterest URL" name="pinterest"
+                                        <input type="text" placeholder="&#xF0d2; Pinterest URL" name="pinterest"
                                             class="form-control" />
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-6">
+                            <hr />
                             <div class="cProfile-education">
                                 <h4>Educational Information</h4>
                                 <div class="row">
                                     <div class="form-group col-md-6">
-                                        <input type="text" placeholder="Level" name="level" class="form-control" />
-                                    </div>
-                                    <div class="form-group col-md-6">
-                                        <input type="text" placeholder="Institute" name="institute"
+                                        <input type="text" placeholder="&#xF5FD; Level" name="level"
                                             class="form-control" />
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <input type="text" placeholder="Graduation" name="graduation"
+                                        <input type="text" placeholder="&#xF19C; Institute" name="institute"
+                                            class="form-control" />
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="text" placeholder="&#xF19D; Degree" name="degree"
+                                            class="form-control" />
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="text" placeholder="&#xF274; Graduation Date" name="graduationDate"
                                             class="form-control" />
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="cProfile-submit">
+                        <a href="#">Submit</a>
                     </div>
                 </form>
             </div>
